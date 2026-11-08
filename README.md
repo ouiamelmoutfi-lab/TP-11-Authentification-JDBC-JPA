@@ -1,12 +1,12 @@
 # TP11 — Authentification JDBC / JPA
 
-Spring Security charge les utilisateurs et leurs rôles depuis MySQL avec Spring Data JPA. `CustomUserDetailsService` fournit ces informations à Spring Security et BCrypt vérifie le mot de passe.
+Spring Security charge les utilisateurs et leurs rôles depuis MySQL avec Spring Data JPA. CustomUserDetailsService fournit ces informations à Spring Security et BCrypt vérifie le mot de passe.
 
 ## Lancement
 
-1. Démarrer MySQL et créer la base `security_db` avec l’encodage `utf8mb4`.
-2. Vérifier les paramètres MySQL locaux dans `src/main/resources/application.properties`.
-3. Lancer `mvn spring-boot:run` ou la classe `SpringSecurityJpaApplication` dans IntelliJ, puis ouvrir [la page de connexion](http://localhost:8080/login).
+1. Démarrer MySQL et créer la base security_db avec l’encodage utf8mb4.
+2. Vérifier les paramètres MySQL locaux dans src/main/resources/application.properties.
+3. Lancer mvn spring-boot:run ou la classe SpringSecurityJpaApplication dans IntelliJ, puis ouvrir [la page de connexion](http://localhost:8080/login).
 
 ## Connexion et accès utilisateur
 
