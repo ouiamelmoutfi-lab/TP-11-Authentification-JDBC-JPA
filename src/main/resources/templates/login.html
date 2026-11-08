@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Connexion</title>
+</head>
+<body>
+<h2>Page de connexion</h2>
+
+<form th:action="@{/login}" method="post">
+    <div>
+        <label>Nom d'utilisateur :</label>
+        <input type="text" name="username" required>
+    </div>
+
+    <div>
+        <label>Mot de passe :</label>
+        <input type="password" name="password" required>
+    </div>
+
+    <button type="submit">Se connecter</button>
+</form>
+
+<p th:if="${param.error}">Identifiants incorrects !</p>
+<p th:if="${param.logout}">Déconnexion réussie.</p>
+</body>
+</html>
